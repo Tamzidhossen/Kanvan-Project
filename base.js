@@ -4,9 +4,9 @@ export default class Kanban{
             return column.columnId == columnId;
         });
 
-        if(!data){
-            return [];
-        }
+        // if(!data){
+        //     return [];
+        // }
 
         return data.tasks;
     }
@@ -84,8 +84,8 @@ function read(){
     if(!data){
         return[
             {columnId: 0, tasks: []},
-            {columnId: 0, tasks: []},
-            {columnId: 0, tasks: []}
+            {columnId: 1, tasks: []},
+            {columnId: 2, tasks: []}
         ];
     }
 
